@@ -16,11 +16,11 @@ Dois arquivos:
 ### Como a página de Login deve ficar
 
 - Fundo da página **cinza bem clarinho**
-- Um **cartão branco** bem no **centro da tela** (na horizontal e na vertical)
-- O cartão tem **borda fina cinza** e **cantos arredondados**
-- Dentro do cartão, de cima para baixo:
+- Uma **caixa branca** bem no **centro da tela**
+- A caixa tem **borda fina cinza** e **cantos arredondados**
+- Dentro da caixa, de cima para baixo:
   1. Título **"Entrar"** (maior e em negrito) e, abaixo, o subtítulo **"Acesse sua conta"** (menor e cinza), os dois centralizados
-  2. Campo **E-mail** (o texto do rótulo fica em cima do campo)
+  2. Campo **E-mail**
   3. Campo **Senha**
   4. Botão **"Entrar"**: fundo escuro, texto branco, cantos arredondados, e que **fica um pouco mais claro quando o mouse passa por cima**
   5. Texto **"Não tem conta? Cadastre-se"**, onde "Cadastre-se" é um link para a página de cadastro e ganha **sublinhado** quando o mouse passa por cima
@@ -39,7 +39,7 @@ Dois arquivos:
 
 - Quando você clica em um campo (foco), a **borda do campo fica escura**
 - O texto de exemplo dentro do campo (placeholder) fica **cinza claro**
-- No **celular**, o cartão ocupa **a largura toda**. Em telas **maiores**, ele tem uma **largura fixa** (por volta de 384px)
+- No **celular**, a caixa ocupa **a largura toda**. Em telas **maiores**, ela tem uma **largura fixa** (por volta de 384px)
 - O cursor vira uma **mãozinha** em cima do botão
 
 ---
@@ -63,13 +63,13 @@ Para testar se funcionou, coloque `class="bg-red-500"` no `<body>`. Ficou vermel
 Antes de estilizar, escreva só o HTML. Pense:
 
 - Qual tag faz sentido para agrupar campos e um botão de envio?
-- Como ligar um texto ao seu campo? (dica: a tag `<label>` pode **envolver** o `<input>`)
+- Como ligar um texto ao seu campo? (dica: pesquise sobre a tag `<label>` e o atributo `for`. Ele se conecta com qual atributo do `<input>`?)
 - Qual `type` de input usar para e-mail? E para senha?
 - Como fazer o botão enviar o formulário?
 
 Abra no navegador. Vai estar feio, e é assim mesmo!
 
-### 3. Estilize o fundo e centralize o cartão
+### 3. Estilize o fundo e centralize a caixa
 
 - Dê uma cor de fundo para o `<body>`
 - Para centralizar algo no meio da tela, você vai precisar de **Flexbox** no `<body>`
@@ -77,7 +77,7 @@ Abra no navegador. Vai estar feio, e é assim mesmo!
 
 [Display flex](https://tailwindcss.com/docs/display) · [Justify content](https://tailwindcss.com/docs/justify-content) · [Align items](https://tailwindcss.com/docs/align-items) · [Min height](https://tailwindcss.com/docs/min-height)
 
-### 4. Transforme o formulário em um cartão
+### 4. Transforme o formulário em uma caixa branca
 
 - Fundo branco, borda, cantos arredondados e um respiro interno (padding)
 - Para empilhar os itens um embaixo do outro **com o mesmo espaço entre eles**, existe um jeito muito mais fácil do que colocar margem em cada um. Pesquise sobre **`gap`** junto com **`flex-direction`**.
@@ -96,7 +96,7 @@ Dica de cores: o Tailwind tem uma paleta de cinzas chamada **neutral**, que vai 
 
 ### 6. Estilize os campos
 
-- O `<label>` também pode ser um flex em coluna, assim o texto fica em cima do campo
+- Para o texto ficar em cima do campo, agrupe cada `<label>` com o seu `<input>` dentro de uma `<div>` e pense em qual direção de flex usar nela
 - Dê ao input uma **altura**, um **padding nas laterais**, uma **borda** e **cantos arredondados**
 - O navegador coloca um contorno azul quando o campo está em foco. Descubra como **remover esse contorno** e, no lugar, **mudar a cor da borda** quando o campo estiver em foco
 - Descubra como mudar a cor do **placeholder**
@@ -115,7 +115,7 @@ Dica de cores: o Tailwind tem uma paleta de cinzas chamada **neutral**, que vai 
 ### 8. Deixe responsivo
 
 - O Tailwind é **mobile first**: as classes sem prefixo valem para **todas as telas**, e as classes com prefixo (ex.: `sm:`) valem **a partir de** um certo tamanho
-- Então: primeiro faça o cartão ocupar a largura toda, depois use um prefixo para dar uma largura fixa em telas maiores
+- Então: primeiro faça a caixa ocupar a largura toda, depois use um prefixo para dar uma largura fixa em telas maiores
 - Teste diminuindo a janela do navegador ou usando o modo celular do DevTools (`F12` → ícone de celular)
 
 [Design responsivo](https://tailwindcss.com/docs/responsive-design) · [Width](https://tailwindcss.com/docs/width)
@@ -130,13 +130,13 @@ Não esqueça de **ligar uma página na outra** pelos links!
 
 ## Checklist final
 
-- [ ] O cartão está centralizado na horizontal **e** na vertical
-- [ ] Os itens do cartão têm espaçamento igual entre eles
-- [ ] Os rótulos ficam em cima dos campos
+- [ ] A caixa está centralizada na horizontal **e** na vertical
+- [ ] Os itens da caixa têm espaçamento igual entre eles
+- [ ] Os rótulos (labels) ficam em cima dos campos
 - [ ] A borda do campo muda de cor ao clicar nele
 - [ ] O botão muda de cor no hover e mostra a mãozinha
 - [ ] O link fica sublinhado no hover
-- [ ] No celular, o cartão ocupa a largura toda; no computador, tem largura fixa
+- [ ] No celular, a caixa ocupa a largura toda; no computador, tem largura fixa
 - [ ] O link do login leva ao cadastro e vice-versa
 - [ ] Não escrevi nenhuma linha de CSS, só classes do Tailwind
 
@@ -192,7 +192,7 @@ preciso pesquisar na documentação.
 ```
 
 ```text
-Meu cartão centraliza na horizontal, mas não na vertical. Não me dê a
+Minha caixa centraliza na horizontal, mas não na vertical. Não me dê a
 resposta, me faça perguntas que me ajudem a descobrir o motivo.
 ```
 

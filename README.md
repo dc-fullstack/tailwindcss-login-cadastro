@@ -6,6 +6,14 @@ Neste desafio você vai criar **duas páginas**: uma tela de **Login** e uma tel
 
 ---
 
+## Antes de começar: faça um fork
+
+Não trabalhe direto neste repositório. Clique em **Fork** (canto superior direito do GitHub) para criar uma cópia na sua conta, depois clone o **seu** fork e faça o desafio nele.
+
+[Como fazer um fork no GitHub](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+
+---
+
 ## O que você precisa entregar
 
 Dois arquivos:

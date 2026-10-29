@@ -2,11 +2,11 @@
 
 Neste desafio você vai criar **duas páginas**: uma tela de **Login** e uma tela de **Cadastro**, usando só HTML e Tailwind CSS (sem escrever nenhuma linha de CSS!).
 
-> 💡 Se é sua primeira vez com Tailwind, tudo bem. A ideia é aprender **procurando na documentação** e **testando**. Errar faz parte!
+> Se é sua primeira vez com Tailwind, tudo bem. A ideia é aprender **procurando na documentação** e **testando**. Errar faz parte!
 
 ---
 
-## 🎯 O que você precisa entregar
+## O que você precisa entregar
 
 Dois arquivos:
 
@@ -35,7 +35,7 @@ Dois arquivos:
 - Botão: **"Cadastrar"**
 - Rodapé: **"Já tem conta? Entrar"** (com link para o login)
 
-### Detalhes extras (para caprichar ✨)
+### Detalhes extras (para caprichar)
 
 - Quando você clica em um campo (foco), a **borda do campo fica escura**
 - O texto de exemplo dentro do campo (placeholder) fica **cinza claro**
@@ -44,7 +44,7 @@ Dois arquivos:
 
 ---
 
-## 🚀 Passo a passo sugerido
+## Passo a passo sugerido
 
 ### 1. Prepare o arquivo
 
@@ -54,15 +54,15 @@ Crie o `login.html` com a estrutura básica de HTML e coloque esta linha dentro 
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 ```
 
-Para testar se funcionou, coloque `class="bg-red-500"` no `<body>`. Ficou vermelho? Então está tudo certo! (Depois apague isso 😄)
+Para testar se funcionou, coloque `class="bg-red-500"` no `<body>`. Ficou vermelho? Então está tudo certo! (Depois apague isso)
 
-📖 [Play CDN do Tailwind](https://tailwindcss.com/docs/installation/play-cdn)
+[Play CDN do Tailwind](https://tailwindcss.com/docs/installation/play-cdn)
 
 ### 2. Monte o HTML primeiro, sem nenhuma classe
 
 Antes de estilizar, escreva só o HTML. Pense:
 
-- Qual tag faz sentido para agrupar campos e um botão de envio? (dica: começa com **f**)
+- Qual tag faz sentido para agrupar campos e um botão de envio?
 - Como ligar um texto ao seu campo? (dica: a tag `<label>` pode **envolver** o `<input>`)
 - Qual `type` de input usar para e-mail? E para senha?
 - Como fazer o botão enviar o formulário?
@@ -73,16 +73,16 @@ Abra no navegador. Vai estar feio, e é assim mesmo!
 
 - Dê uma cor de fundo para o `<body>`
 - Para centralizar algo no meio da tela, você vai precisar de **Flexbox** no `<body>`
-- ⚠️ Pegadinha: o `<body>` só tem a altura do conteúdo. Para centralizar **na vertical**, ele precisa ter **pelo menos a altura da tela**. Procure por "min-height" na documentação.
+- Pegadinha: o `<body>` só tem a altura do conteúdo. Para centralizar **na vertical**, ele precisa ter **pelo menos a altura da tela**. Procure por "min-height" na documentação.
 
-📖 [Display flex](https://tailwindcss.com/docs/display) · [Justify content](https://tailwindcss.com/docs/justify-content) · [Align items](https://tailwindcss.com/docs/align-items) · [Min height](https://tailwindcss.com/docs/min-height)
+[Display flex](https://tailwindcss.com/docs/display) · [Justify content](https://tailwindcss.com/docs/justify-content) · [Align items](https://tailwindcss.com/docs/align-items) · [Min height](https://tailwindcss.com/docs/min-height)
 
 ### 4. Transforme o formulário em um cartão
 
 - Fundo branco, borda, cantos arredondados e um respiro interno (padding)
 - Para empilhar os itens um embaixo do outro **com o mesmo espaço entre eles**, existe um jeito muito mais fácil do que colocar margem em cada um. Pesquise sobre **`gap`** junto com **`flex-direction`**.
 
-📖 [Background color](https://tailwindcss.com/docs/background-color) · [Border width](https://tailwindcss.com/docs/border-width) · [Border color](https://tailwindcss.com/docs/border-color) · [Border radius](https://tailwindcss.com/docs/border-radius) · [Padding](https://tailwindcss.com/docs/padding) · [Flex direction](https://tailwindcss.com/docs/flex-direction) · [Gap](https://tailwindcss.com/docs/gap)
+[Background color](https://tailwindcss.com/docs/background-color) · [Border width](https://tailwindcss.com/docs/border-width) · [Border color](https://tailwindcss.com/docs/border-color) · [Border radius](https://tailwindcss.com/docs/border-radius) · [Padding](https://tailwindcss.com/docs/padding) · [Flex direction](https://tailwindcss.com/docs/flex-direction) · [Gap](https://tailwindcss.com/docs/gap)
 
 ### 5. Estilize os textos
 
@@ -90,9 +90,9 @@ Abra no navegador. Vai estar feio, e é assim mesmo!
 - Subtítulo e rodapé: tamanho menor e cor cinza
 - Alinhamento centralizado
 
-💡 Dica de cores: o Tailwind tem uma paleta de cinzas chamada **neutral**, que vai de `50` (quase branco) até `950` (quase preto). Use ela em tudo!
+Dica de cores: o Tailwind tem uma paleta de cinzas chamada **neutral**, que vai de `50` (quase branco) até `950` (quase preto). Use ela em tudo!
 
-📖 [Font size](https://tailwindcss.com/docs/font-size) · [Font weight](https://tailwindcss.com/docs/font-weight) · [Text color](https://tailwindcss.com/docs/color) · [Text align](https://tailwindcss.com/docs/text-align) · [Paleta de cores](https://tailwindcss.com/docs/colors)
+[Font size](https://tailwindcss.com/docs/font-size) · [Font weight](https://tailwindcss.com/docs/font-weight) · [Text color](https://tailwindcss.com/docs/color) · [Text align](https://tailwindcss.com/docs/text-align) · [Paleta de cores](https://tailwindcss.com/docs/colors)
 
 ### 6. Estilize os campos
 
@@ -101,7 +101,7 @@ Abra no navegador. Vai estar feio, e é assim mesmo!
 - O navegador coloca um contorno azul quando o campo está em foco. Descubra como **remover esse contorno** e, no lugar, **mudar a cor da borda** quando o campo estiver em foco
 - Descubra como mudar a cor do **placeholder**
 
-📖 [Height](https://tailwindcss.com/docs/height) · [Outline style](https://tailwindcss.com/docs/outline-style) · [Estados: hover, focus e outros](https://tailwindcss.com/docs/hover-focus-and-other-states) · [Placeholder](https://tailwindcss.com/docs/hover-focus-and-other-states#placeholder-text)
+[Height](https://tailwindcss.com/docs/height) · [Outline style](https://tailwindcss.com/docs/outline-style) · [Estados: hover, focus e outros](https://tailwindcss.com/docs/hover-focus-and-other-states) · [Placeholder](https://tailwindcss.com/docs/hover-focus-and-other-states#placeholder-text)
 
 ### 7. Estilize o botão e o link
 
@@ -110,7 +110,7 @@ Abra no navegador. Vai estar feio, e é assim mesmo!
 - Troque o cursor para a "mãozinha"
 - Link: sublinhado só no hover
 
-📖 [Cursor](https://tailwindcss.com/docs/cursor) · [Text decoration](https://tailwindcss.com/docs/text-decoration-line) · [Hover](https://tailwindcss.com/docs/hover-focus-and-other-states#hover-focus-and-active)
+[Cursor](https://tailwindcss.com/docs/cursor) · [Text decoration](https://tailwindcss.com/docs/text-decoration-line) · [Hover](https://tailwindcss.com/docs/hover-focus-and-other-states#hover-focus-and-active)
 
 ### 8. Deixe responsivo
 
@@ -118,17 +118,17 @@ Abra no navegador. Vai estar feio, e é assim mesmo!
 - Então: primeiro faça o cartão ocupar a largura toda, depois use um prefixo para dar uma largura fixa em telas maiores
 - Teste diminuindo a janela do navegador ou usando o modo celular do DevTools (`F12` → ícone de celular)
 
-📖 [Design responsivo](https://tailwindcss.com/docs/responsive-design) · [Width](https://tailwindcss.com/docs/width)
+[Design responsivo](https://tailwindcss.com/docs/responsive-design) · [Width](https://tailwindcss.com/docs/width)
 
 ### 9. Crie a página de cadastro
 
-Se o login ficou pronto, essa parte é rápida 😉 Pense no que dá para **reaproveitar** e no que muda.
+Se o login ficou pronto, essa parte é rápida. Pense no que dá para **reaproveitar** e no que muda.
 
 Não esqueça de **ligar uma página na outra** pelos links!
 
 ---
 
-## ✅ Checklist final
+## Checklist final
 
 - [ ] O cartão está centralizado na horizontal **e** na vertical
 - [ ] Os itens do cartão têm espaçamento igual entre eles
@@ -138,11 +138,11 @@ Não esqueça de **ligar uma página na outra** pelos links!
 - [ ] O link fica sublinhado no hover
 - [ ] No celular, o cartão ocupa a largura toda; no computador, tem largura fixa
 - [ ] O link do login leva ao cadastro e vice-versa
-- [ ] Não escrevi nenhuma linha de CSS, só classes do Tailwind 💪
+- [ ] Não escrevi nenhuma linha de CSS, só classes do Tailwind
 
 ---
 
-## 🤖 Usando a I.A. como professor particular
+## Usando a I.A. como professor particular
 
 A I.A. pode ser uma ótima professora, **desde que você peça para ela te ensinar e não para fazer por você**. Se ela entregar o código pronto, você não aprende, e na hora de fazer sozinho vai travar.
 
@@ -157,7 +157,7 @@ de tela de login. Quero que você seja meu professor particular.
 Regras:
 - NÃO me dê o código pronto, nem as classes prontas.
 - Me explique o conceito e me dê dicas ou perguntas que me façam chegar
-  na resposta sozinho.
+na resposta sozinho.
 - Se eu pedir, me indique a página da documentação oficial do Tailwind.
 - Use exemplos que NÃO sejam do meu exercício.
 - Fale de um jeito simples, pois sou iniciante.
@@ -219,15 +219,15 @@ cores, hover e responsividade) para eu testar o que aprendi.
 Espere eu responder antes de corrigir.
 ```
 
-> ⚠️ Se a I.A. mesmo assim te mandar o código pronto, **não copie**. Responda: _"Eu pedi para não me dar a resposta. Me dê só uma dica."_
+> Se a I.A. mesmo assim te mandar o código pronto, **não copie**. Responda: _"Eu pedi para não me dar a resposta. Me dê só uma dica."_
 
 ---
 
-## 📚 Links úteis
+## Links úteis
 
 - [Documentação oficial do Tailwind CSS](https://tailwindcss.com/docs) (use a busca com `Ctrl + K`!)
 - [Tailwind Play](https://play.tailwindcss.com/): editor online para testar classes rapidinho
 - [Flexbox Froggy](https://flexboxfroggy.com/#pt-br): joguinho para aprender Flexbox (os nomes das propriedades são do CSS, mas o conceito é o mesmo do Tailwind)
 - [MDN: formulários em HTML](https://developer.mozilla.org/pt-BR/docs/Learn/Forms)
 
-Bons estudos e mão na massa! 🚀
+Bons estudos e mão na massa!
